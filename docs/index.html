@@ -179,6 +179,71 @@
   <script>
     console.log('This is a script element.');
   </script>
+  <hr>
+  <del>This is a deleted element.</del>
+  <ins>This is an inserted element.</ins>
+  <hr>
+  <table>
+    <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Row 1, Cell 1</td>
+      <td>Row 1, Cell 2</td>
+    </tr>
+    <tr>
+      <td>Row 2, Cell 1</td>
+      <td>Row 2, Cell 2</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td>Footer 1</td>
+      <td>Footer 2</td>
+    </tr>
+    </tfoot>
+  </table>
+  <br>
+  <hr>
+  <button>Click Me!</button>
+  <br>
+  <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Safari">
+  </option>
+  </datalist>
+  <fieldset>
+    <legend>Give me your information</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age">
+    <legend>Legend Text</legend>
+  </fieldset>
+  <form>
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" id="browser" name="browser">
+    <input type="submit">
+  </form>
+  <label for="input">Input Label:</label>
+  <input type="text" placeholder="Type something...">
+  <meter value="0.6" min="0" max="1">60%</meter>
+  <select>
+    <optgroup label="Group 1">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+    </optgroup>
+  </select>
+  <hr>
+  <br>
+  <output>This is an output element.</output>
+  <progress value="70" max="100">70%</progress>
   
 </body>
 </html>
