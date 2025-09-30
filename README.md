@@ -14,3 +14,10 @@ lmileski@sandiego.edu
 - Media and embeddings
 - Graphics and math
 - Forms and controls
+
+**Issues Encountered**
+- Often forgetting about closing tags
+- Improper nesting of tags (very easy to get wrong)
+- Using deprecated elements like marquee even though they're cool and can work
+- Misusing attributes
+- Over-reliance on <br> and <hr> but CSS padding will help with this
