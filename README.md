@@ -1,6 +1,8 @@
 # lab4-web-foundations-html
 Lab 4 - COMP 305 - Fall 2025
 
+Visit the site here: https://lmileski.github.io/lab4-web-foundations-html/
+
 Author:
 Luke Mileski
 lmileski@sandiego.edu
