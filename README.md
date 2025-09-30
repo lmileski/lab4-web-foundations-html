@@ -22,4 +22,4 @@ lmileski@sandiego.edu
 - Improper nesting of tags (very easy to get wrong)
 - Using deprecated elements like marquee even though they're cool and can work
 - Misusing attributes
-- Over-reliance on <br> and <hr> but CSS padding will help with this
+- Over-reliance on br and hr tags but CSS padding will help with this
