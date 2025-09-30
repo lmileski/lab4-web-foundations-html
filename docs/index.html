@@ -44,8 +44,8 @@
     <h4>Copyright: this document is all mine :)</h4>
     <p>Is this where I should put my footer? Maybe not.</p>
   </footer>
+  <h1>Header 1</h1>
   <section>
-    <h1>Header 1</h1>
     <h2>Header 2</h2>
     <h3>Header 3</h3>
     <h4>Header 4</h4>
@@ -53,7 +53,7 @@
     <h6>Header 6</h6>
   </section>
   <hgroup>
-    This is secondary content
+    <h3>This is tertiary content</h3>
   </hgroup>
   <main>
     I'm the main attraction!
@@ -73,10 +73,8 @@
     <dd>HyperText Markup Language</dd>
     <dt>CSS</dt>
     <dd>Cascading Style Sheets</dd>
-    <div>
-      div should be used sparingly!
-    </div>
   </dl>
+  <p><em>div</em> should be used sparingly!</p>
   <figure>
     <img src="https://media.tenor.com/9ck1nw-wlFEAAAAM/pogo-stick-jumping.gif" alt="A guy jumping on a pogo stick">
     <figcaption>Don't try this at home!</figcaption>
@@ -113,13 +111,13 @@
   <br>
   <bdi>Treat me in isolation</bdi>
   <br>
-  <bdo>Right to left</bdo>
+  <bdo dir="rtl">Right to left</bdo>
   <br>
   <cite>HTML5 Rocks!</cite>
   <br>
   <code>print("Hello, World!")</code>
   <br>
-  <data value="2025-09-29" time="07:13:00"></data>
+  <data value="2025-09-29"></data>
   <p>
     <dfn>HTML</dfn> is fun!
   </p>
@@ -131,10 +129,7 @@
   <mark>Highlight me!</mark>
   <q cite="https://www.sandiego.edu">Go Toreros!</q>
   <br>
-  <rp>(</rp>
-  <rt>Hooray for USD!</rt>
-  <rp>)</rp>
-  <ruby>USD (You-Ess-Dee)</ruby>
+  <ruby>USD <rp>(</rp><rt>You-Ess-Dee</rt><rp>)</rp></ruby><br>
   <s>Use del instead</s>
   <br>
   <samp>This is sample output from a program</samp>
@@ -161,16 +156,16 @@
     <source src="audio-file.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <track kind="subtitles" src="subtitles_en.vtt" srclang="en" label="English">
   <video controls>
     <source src="video-file.mp4" type="video/mp4">
+    <track kind="subtitles" src="subtitles_en.vtt" srclang="en" label="English">
     Your browser does not support the video element.
   </video>
   <br>
   <hr>
   <embed src="README.md" width="600" height="400">
   <br>
-  <inframe src="https://www.sandiego.edu" width="600" height="400" title="USD Website"></iframe>
+  <iframe src="https://www.sandiego.edu" width="600" height="400" title="USD Website"></iframe>
   <br>
   <object data="https://www.sandiego.edu" width="600" height="400" type="text/html">
     <p>Your browser does not support embedded objects.</p>
@@ -230,7 +225,6 @@
     <option value="Chrome">
     <option value="Firefox">
     <option value="Safari">
-  </option>
   </datalist>
   <fieldset>
     <legend>Give me your information</legend>
@@ -239,7 +233,6 @@
     <br>
     <label for="age">Age:</label>
     <input type="number" id="age" name="age">
-    <legend>Legend Text</legend>
   </fieldset>
   <form>
     <label for="browser">Choose your browser from the list:</label>
@@ -247,7 +240,7 @@
     <input type="submit">
   </form>
   <label for="input">Input Label:</label>
-  <input type="text" placeholder="Type something...">
+  <input id="input" type="text" placeholder="Type something...">
   <meter value="0.6" min="0" max="1">60%</meter>
   <select>
     <optgroup label="Group 1">
@@ -270,6 +263,5 @@
   <template>
     <p>This is a template element.</p>
   </template>
-
 </body>
 </html>
