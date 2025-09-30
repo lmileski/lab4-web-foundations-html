@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exploring HTML Elements</title>
   <style>
+    h1 { color: blue; }
     .best { font-weight: 700; }
   </style>
 </head>
@@ -15,6 +16,20 @@
   <h1>Hello HTML World</h1>
   <address>Contact me at lmileski@sandiego.edu</address>
   <hr>
+  <p>School:<my-school data-campus="San Diego" data-year="1949"> University of San Diego</my-school></p>
+  <p>Right now: <span id="now"></span></p>
+  <script>
+    class MySchool extends HTMLElement {
+      getTime() {
+        const { campus, founded } = this.dataset;
+        const data = [campus, founded ? `est. ${founded}` : null].filter(Boolean);
+        if (data.length) this.insertAdjacentText('beforeend', ` (${data.join(', ')})`);
+      }
+    }
+    customElements.define('my-school', MySchool);
+    document.getElementById('now').textContent = new Date().toLocaleString();
+  </script>
+
   <article>
     <h2>This is an article</h2>
     <p>I am learning HTML!</p>
@@ -244,6 +259,17 @@
   <br>
   <output>This is an output element.</output>
   <progress value="70" max="100">70%</progress>
-  
+  <textarea placeholder="Enter text here..."></textarea>
+  <hr>
+  <details>
+    <summary>More Info</summary>
+    <p>This is additional information inside the details element.</p>
+    <dialog open>This is a dialog element.</dialog>
+  </details>
+  <hr>
+  <template>
+    <p>This is a template element.</p>
+  </template>
+
 </body>
 </html>
